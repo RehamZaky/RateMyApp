@@ -16,6 +16,12 @@ class DialogStyle {
   /// The title text style.
   final TextStyle? titleStyle;
 
+  /// The insetPadding of dialog
+  final EdgeInsets? insetPadding;
+
+  /// the elevation of dialog
+  final double? elevation;
+
   /// The message padding.
   final EdgeInsetsGeometry messagePadding;
 
@@ -38,6 +44,8 @@ class DialogStyle {
     this.messageAlign,
     this.messageStyle,
     this.dialogShape,
+    this.insetPadding,
+    this.elevation,
   });
 }
 

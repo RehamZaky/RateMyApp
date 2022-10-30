@@ -206,6 +206,7 @@ class _RateMyAppStarDialogState extends State<RateMyAppStarDialog> {
     );
 
     return AlertDialog(
+      elevation: widget.dialogStyle.elevation,
       title: Padding(
         padding: widget.dialogStyle.titlePadding,
         child: Text(
@@ -217,6 +218,7 @@ class _RateMyAppStarDialogState extends State<RateMyAppStarDialog> {
       content: widget.contentBuilder(context, content),
       contentPadding: widget.dialogStyle.contentPadding,
       shape: widget.dialogStyle.dialogShape,
+      insetPadding: widget.dialogStyle.insetPadding ?? const EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0),
       actions: (widget.actionsBuilder ?? widget._defaultOnRatingChanged)(
           context, currentRating),
     );
